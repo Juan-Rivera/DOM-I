@@ -40,3 +40,64 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+//Navigation BAR
+let navBar = document.querySelector('nav');
+
+const links = document.querySelectorAll('a');
+links[0].textContent = siteContent['nav']['nav-item-1'];
+links[1].textContent = siteContent['nav']['nav-item-2'];
+links[2].textContent = siteContent['nav']['nav-item-3'];
+links[3].textContent = siteContent['nav']['nav-item-4'];
+links[4].textContent = siteContent['nav']['nav-item-5'];
+links[5].textContent = siteContent['nav']['nav-item-6'];
+
+links[0].styler.color = 'green';
+links[1].styler.color = 'green';
+links[2].styler.color = 'green';
+links[3].styler.color = 'green';
+links[4].styler.color = 'green';
+links[5].styler.color = 'green';
+
+//new Link at the end of the navigation Bar 
+const newLink = document.createElement('a');
+newLink.textContent = 'Team';
+newLink.style.color = 'green';
+newLink.href = '#';
+nav.appendChild(newLink);
+
+//new Link at the beginning of navigation Bar
+const newLink2 = document.createElement('a');
+newLink2.textContent = 'Location';
+newLink2.style.color = 'green';
+newLink2.href = '#';
+nav.prepend(newLink2);
+
+//mid Image
+let midImg = document.querySelector('.middle-img');
+midImage.src = 'img/mid-page-accent.jpg';
+
+//h4 Tags
+//main-content
+h4tag[0].textContent = siteContent['main-content'] ['features-h4']
+h4tag[1].textContent = siteContent['main-content']['about-h4']
+h4tag[2].textContent = siteContent['main-content']['services-h4']
+h4tag[3].textContent = siteContent['main-content']['product-h4']
+h4tag[4].textContent = siteContent['main-content']['vision-h4']
+//contact
+h4tag[5].textContent = siteContent['contact']['contact-h4']
+
+//paragraph tags
+let ptag = document.querySelectorAll('p');
+//main-content
+ptag[0].textContent = siteContent['main-content']['features-content'];
+ptag[1].textContent = siteContent['main-content']['about-content'];
+ptag[2].textContent = siteContent['main-content']['services-content'];
+ptag[3].textContent = siteContent['main-content']['product-content'];
+ptag[4].textContent = siteContent['main-content']['vision-content'];
+//contact
+ptag[5].textContent = siteContent['contact']['address'];
+ptag[6].textContent = siteContent['contact']['phone'];
+ptag[7].textContent = siteContent['contact']['email'];
+//footer
+ptag[8].textContent = siteContent['footer']['copyright'];
